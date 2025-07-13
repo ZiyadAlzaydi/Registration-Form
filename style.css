@@ -1,0 +1,161 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffebd5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to allow content to expand */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Add some padding around the content */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Container for both form and table */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack form and table vertically */
+    gap: 30px; /* Space between form and table */
+    align-items: center; /* Center items horizontally */
+    width: 100%;
+    max-width: 800px; /* Max width for the entire content area */
+}
+
+/* Form container */
+form {
+    background-color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make form responsive */
+    max-width: 350px; /* Max width for the form */
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Input field container */
+div {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #e01111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Table styling */
+.data-table-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Make table container responsive */
+    box-sizing: border-box;
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%; /* Make table responsive */
+    margin: 0 auto; /* Center table within its container */
+    font-size: 16px;
+    min-width: 400px; /* Ensure table doesn't get too narrow */
+}
+
+th, td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #e0e0e0; /* Lighter border for a cleaner look */
+}
+
+th {
+    background-color: #e01111;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8; /* Slightly lighter even rows */
+}
+
+tr:hover {
+    background-color: #e9f5ff; /* Highlight row on hover */
+}
+
+/* Toggle Button Styling */
+.toggle-btn {
+    background-color: #28a745; /* Green color for toggle */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form, .data-table-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .toggle-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
